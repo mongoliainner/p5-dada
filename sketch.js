@@ -46,8 +46,8 @@ function draw() {
   camera(camX, camY, camZ, 0, 0, 0, 0, 1, 0);
 
   if (frameCount % x == 1) {
-    let w = random(20, 100);
-    let h = random(20, 100);
+    let w = random(40, 200);
+    let h = random(40, 200);
     let img = random(textures);
     planes.push({ x: 0, y: 0, z: 0, w: w, h: h, img: img });
   }
