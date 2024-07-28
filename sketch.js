@@ -15,7 +15,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  background(200);
+  background(255);
 }
 
 function draw() {
@@ -40,8 +40,8 @@ function draw() {
   }
 
   // Place the camera in a 3/4 view with WASD control
-  let camX = camPos.x + mouseX - width / 2;
-  let camY = camPos.y + mouseY - height / 2;
+  let camX = camPos.x;
+  let camY = camPos.y + mouseY;
   let camZ = 150;
   camera(camX, camY, camZ, 0, 0, 0, 0, 1, 0);
 
